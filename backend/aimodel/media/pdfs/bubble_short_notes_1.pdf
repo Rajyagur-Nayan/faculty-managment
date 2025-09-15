@@ -1,0 +1,369 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 6805
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 16 Tf
+18.3999999999999986 TL
+0 g
+28.3464566929133888 813.5435433070865656 Td
+(• Of course! Here are teacher-friendly notes on Bubble Sort, designed to) Tj
+T* (be clear, easy to understand, and focused on key exam points.) Tj
+T* (• ---) Tj
+T* (• ### **Teacher Notes: Bubble Sort Algorithm**) Tj
+T* (• #### **1) Tj
+T* (• Core Concept: What is Bubble Sort?**) Tj
+T* (• *   **The Big Idea:** Bubble Sort is the simplest sorting algorithm) Tj
+T* (• It works by repeatedly stepping through the list, comparing adjacent) Tj
+T* (pairs of elements, and swapping them if they are in the wrong order.) Tj
+T* (• *   **Why the Name "Bubble"?** With each pass through the list, the) Tj
+T* (largest unsorted element "bubbles up" to its correct position at the end,) Tj
+T* (like an air bubble rising in water.) Tj
+T* (• *   **Main Use Case:** It's primarily a teaching tool to introduce the) Tj
+T* (concept of sorting algorithms) Tj
+T* (• It is **not** efficient for real-world applications with large datasets.) Tj
+T* (• #### **2) Tj
+T* (• How It Works: The Step-by-Step Logic**) Tj
+T* (• The algorithm can be broken down into "passes.") Tj
+T* (• 1) Tj
+T* (• **Start at the beginning** of the array.) Tj
+T* (• 2) Tj
+T* (• **Compare the first element with the second.** If the first is larger than) Tj
+T* (the second, **swap them**.) Tj
+T* (• 3) Tj
+T* (• **Move to the next pair** \(the second and third elements\) and repeat) Tj
+T* (the comparison and swap.) Tj
+T* (• 4) Tj
+T* (• **Continue this process** until you reach the end of the list) Tj
+T* (• This completes **one full pass**.) Tj
+T* (• 5) Tj
+T* (• **Key Result of Pass 1:** The largest element in the list is now at the) Tj
+T* (very end.) Tj
+T* (• 6) Tj
+T* (• **Repeat the entire process** for the remaining unsorted part of the list) Tj
+T* (\(i.e., from the beginning to the second-to-last element\).) Tj
+T* (• 7) Tj
+T* (• Keep making passes until a full pass completes with **no swaps**,) Tj
+T* (which means the list is sorted.) Tj
+T* (• ---) Tj
+T* (• #### **3) Tj
+T* (• Walkthrough Example \(Crucial for Teaching\)**) Tj
+T* (• Use a small array on the whiteboard) Tj
+T* (• Let's sort: **`[5, 1, 4, 2, 8]`**) Tj
+T* (• **Pass 1:** \(Goal: Move the largest element, 8, to the end\)) Tj
+T* (• *   `[**5, 1**, 4, 2, 8]` -> 5 > 1? Yes) Tj
+T* (• **Swap**) Tj
+T* (• -> `[1, 5, 4, 2, 8]`) Tj
+T* (• *   `[1, **5, 4**, 2, 8]` -> 5 > 4? Yes) Tj
+T* (• **Swap**) Tj
+T* (• -> `[1, 4, 5, 2, 8]`) Tj
+T* (• *   `[1, 4, **5, 2**, 8]` -> 5 > 2? Yes) Tj
+T* (• **Swap**) Tj
+T* (• -> `[1, 4, 2, 5, 8]`) Tj
+T* (• *   `[1, 4, 2, **5, 8**]` -> 5 > 8? No) Tj
+T* (• No swap.) Tj
+T* (• *   **End of Pass 1:** Array is `[1, 4, 2, 5, **8**]`) Tj
+T* (• The largest element \(8\) is now in its correct place.) Tj
+T* (• **Pass 2:** \(Now we only need to look at the first 4 elements\)) Tj
+T* (• *   `[**1, 4**, 2, 5, 8]` -> 1 > 4? No.) Tj
+T* (• *   `[1, **4, 2**, 5, 8]` -> 4 > 2? Yes) Tj
+T* (• **Swap**) Tj
+T* (• -> `[1, 2, 4, 5, 8]`) Tj
+T* (• *   `[1, 2, **4, 5**, 8]` -> 4 > 5? No.) Tj
+T* (• *   **End of Pass 2:** Array is `[1, 2, 4, **5**, 8]`) Tj
+T* (• The second-largest element \(5\) is now in its correct place.) Tj
+T* (• **Pass 3:**) Tj
+T* (• *   `[**1, 2**, 4, 5, 8]` -> 1 > 2? No.) Tj
+T* (• *   `[1, **2, 4**, 5, 8]` -> 2 > 4? No.) Tj
+T* (• *   **End of Pass 3:** Array is `[1, 2, 4, 5, 8]`.) Tj
+T* (• *   **Optimization Check:** Since no swaps were made in this pass,) Tj
+T* (the algorithm can stop) Tj
+T* (• The list is sorted.) Tj
+T* (• ---) Tj
+T* (• #### **4) Tj
+T* (• Exam-Oriented Points \(Key Technical Details\)**) Tj
+T* (• Students **must** know these for exams.) Tj
+T* (• *   **Time Complexity:** \(How the runtime grows with the input size 'n'\)) Tj
+T* (• *   **Worst Case: O\(n²\)**) Tj
+T* (• *   When does this happen? When the list is in reverse order.) Tj
+T* (• *   Why? It requires the maximum number of comparisons and swaps) Tj
+T* (in every pass.) Tj
+T* (• *   **Average Case: O\(n²\)**) Tj
+T* (• *   When does this happen? For a randomly shuffled list.) Tj
+T* (• *   **Best Case: O\(n\)**) Tj
+T* (• *   When does this happen? When the list is **already sorted**.) Tj
+T* (• *   **Important Caveat:** This O\(n\) best case only applies to the) Tj
+T* (**optimized version** of Bubble Sort \(the one that stops if a pass has no) Tj
+T* (swaps\)) Tj
+T* (• The un-optimized version will always run in O\(n²\) time.) Tj
+T* (• *   **Space Complexity: O\(1\)**) Tj
+T* (• *   This means it's an **"in-place"** algorithm.) Tj
+T* (• *   It requires a constant amount of extra memory, regardless of the list) Tj
+T* (size \(just one temporary variable for the swap\).) Tj
+T* (• *   **Stability: Stable**) Tj
+T* (• *   What does "stable" mean? If there are two elements with the same) Tj
+T* (value, their original relative order will be preserved after sorting) Tj
+T* (• Bubble Sort only swaps adjacent elements if one is strictly greater than) Tj
+T* (the other, so it is stable.) Tj
+T* (• #### **5) Tj
+T* (• Pros & Cons \(Perfect for "Compare and Contrast" Questions\)**) Tj
+T* (• *   **Advantages \(Pros\):**) Tj
+T* (• *   Very simple to understand and implement.) Tj
+T* (• *   Excellent for teaching basic sorting concepts.) Tj
+T* (• *   Requires minimal memory \(O\(1\) space\).) Tj
+T* (• *   Can detect a sorted list efficiently \(in the optimized version\).) Tj
+T* (• *   **Disadvantages \(Cons\):**) Tj
+T* (• *   Extremely inefficient for larger lists \(O\(n²\) time complexity\).) Tj
+T* (• *   One of the slowest sorting algorithms.) Tj
+T* (• *   Not used in any practical, performance-critical applications.) Tj
+T* (• #### **6) Tj
+T* (• Teaching Tips & Common Student Mistakes**) Tj
+T* (• *   **Analogy:** The "line-up" analogy works great) Tj
+T* (• Imagine a line of students of different heights) Tj
+T* (• You, the teacher, walk down the line, comparing two adjacent students) Tj
+T* (at a time and swapping them if the shorter one is behind the taller one) Tj
+T* (• After you walk the whole line, the tallest student is guaranteed to be at) Tj
+T* (the end.) Tj
+T* (• *   **Visualize:** Always draw the array on the board and physically) Tj
+T* (erase/rewrite the numbers for each swap) Tj
+T* (• Animations are even better.) Tj
+T* (• *   **Common Mistakes to Watch For:**) Tj
+T* (• *   **Loop Boundaries:** Students often get the loop conditions wrong,) Tj
+T* (leading to an `IndexOutOfBounds` error) Tj
+T* (• The inner loop should run one less time with each pass \(`for j = 0 to) Tj
+T* (n-i-1`\).) Tj
+T* (• *   **Forgetting the Optimization:** Students may forget to add the "no) Tj
+T* (swaps" check, leading to an inefficient implementation.) Tj
+T* (• *   **Confusing Complexity:** Mixing up the best/worst cases or not) Tj
+T* (knowing *why* they occur) Tj
+T* (• Emphasize the "reverse sorted" and "already sorted" scenarios.) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 3.0.2)
+/CreationDate (D:20250915041326+05'30')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000007009 00000 n 
+0000008826 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000007066 00000 n 
+0000007191 00000 n 
+0000007321 00000 n 
+0000007454 00000 n 
+0000007591 00000 n 
+0000007714 00000 n 
+0000007843 00000 n 
+0000007975 00000 n 
+0000008111 00000 n 
+0000008239 00000 n 
+0000008366 00000 n 
+0000008495 00000 n 
+0000008628 00000 n 
+0000008730 00000 n 
+0000009074 00000 n 
+0000009160 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <B2B9E5F46459A904DD069849D257B625> <B2B9E5F46459A904DD069849D257B625> ]
+>>
+startxref
+9264
+%%EOF
